@@ -1,0 +1,178 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: red;
+  color:red;
+  padding: 20px;
+
+
+  background-image: url('wallpaperflare.com_wallpaper.jpg');
+  background-size: cover; /* This will scale the image to cover the entire container */
+  background-position: center; /* This will center the image in the container */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+  height: 100vh; /* This will make the body height equal to the viewport height */
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.search-bar-container {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* This will ensure the search bar stays on top of other elements */
+  background-color: inherit; /* This will make the search bar's background match the page's background */
+  border-radius: 15px; 
+}
+
+
+table, th, td {
+  border: 0px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  background-color: #3f464d;
+  color: #fff;
+}
+
+th {
+  background-color: #2e2e2e;
+  color: white;
+  border-bottom: 2px solid #ddd;
+}
+
+
+tr:nth-child(even) td {
+  background-color: #444c54;
+}
+
+
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #3f464d;
+  border: none;
+  color: #fff;
+  border-radius: 15px; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.scrollable-table {
+  max-height: 850px; /* Adjust this value as needed */
+  padding: 20px 0;
+}
+
+
+.react-autosuggest__suggestions-container {
+  background-color: #444c54; /* Change this to the color of your search bar */
+  margin-left: 0; /* Adjust this to align with the search bar */
+  color: white;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+
+.react-autosuggest__suggestions-container {
+  position: absolute;
+  z-index: 1; /* This will make sure the suggestion box appears on top of other elements */
+}
+
+
+.react-autosuggest__suggestions-container {
+  max-height: 200px; /* Adjust this value to your liking */
+  overflow: auto; /* This will create a scrollbar when the content exceeds the max height */
+  width: 100%; /* This will make the suggestion box as wide as the search bar */
+  border-radius: 15px; /* This will make the suggestion box rounder */
+  margin-top: 10px; /* This will create a gap between the search bar and the suggestion box */
+  margin-bottom: 100px;
+}
+
+.react-autosuggest__suggestion {
+  padding: 10px; /* This will make each item smaller */
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Adjust to desired width */
+}
+
+::-webkit-scrollbar-track {
+  background: #3f464d; /* This makes the track the same color as the table */
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #2d3641; /* This makes the handle black */
+  border-radius: 20px; /* This makes the handle rounder */
+  border: 3px solid transparent; /* This makes the handle "stick" to the edges */
+}
+
+th {
+  /* ... existing styles ... */
+  position: sticky;
+  top: 0;
+  background-color: #2e2e2e; /* This ensures the header has a solid background */
+  z-index: 1; /* This ensures the header stays on top of the other rows */
+}
+
+tbody {
+  display: block;
+  overflow: auto;
+  height: 640px; /* Adjust this value to your liking */
+}
+
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; /* This ensures the width of the header and body rows are the same */
+}
+
+.footer {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-family: Arial, sans-serif;
+  color: #444;
+}
+
+
+.sortable {
+  cursor: pointer;
+}
+
+.sortable:hover {
+  background-color: none;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7%; /* or any size you want */
+  height: auto; /* maintain aspect ratio */
+}

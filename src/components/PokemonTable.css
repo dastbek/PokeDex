@@ -1,0 +1,9 @@
+/* PokemonTable.css */
+.pokemon-table {
+    border-radius: 15px;
+    overflow: hidden; /* This makes sure the table's content also respects the border-radius */
+  }
+  
+  .pokemon-table th, .pokemon-table td {
+    border-radius: 15px;
+  }
