@@ -34,11 +34,17 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
           <th className="sortable" onClick={() => sortData("Sprite")}>
             Sprite
           </th>
+          <th className="sortable" onClick={() => sortData("Level")}>
+            Level
+          </th>
           <th className="sortable" onClick={() => sortData("Member")}>
             Member
           </th>
           <th className="sortable" onClick={() => sortData("Item")}>
             Item
+          </th>
+          <th className="sortable" onClick={() => sortData("Region")}>
+            Region
           </th>
         </tr>
       </thead>
@@ -53,8 +59,10 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
             <td>
               <img src={row.Path} alt={row.Pokemon} /> {/* Add this line */}
             </td>
+            <td>{row.Level}</td>
             <td>{row.Member}</td>
             <td>{row.Item}</td>
+            <td>{row.Region}</td>
           </tr>
         ))}
       </tbody>
