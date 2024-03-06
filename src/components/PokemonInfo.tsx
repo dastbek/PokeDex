@@ -101,6 +101,14 @@ const PokemonInfo: React.FC = () => {
   }, 300); // Delay of 300ms
 
   // const debouncedSetSuggestions = debounce((value: string) => {
+  //   const results = fuse.search(value);
+  //   const newSuggestions = results
+  //     .map((result) => result.item.Pokemon)
+  //     .concat(results.map((result) => result.item.Map));
+  //   setSuggestions(Array.from(new Set(newSuggestions))); // Remove duplicates
+  // }, 500); // Delay of 300ms
+
+  // const debouncedSetSuggestions = debounce((value: string) => {
   //   const lowerCaseValue = value.toLowerCase();
 
   //   const exactMatch = data.some(

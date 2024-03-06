@@ -103,7 +103,7 @@ ul {
 
 
 .react-autosuggest__suggestions-container {
-  max-height: 200px; /* Adjust this value to your liking */
+  max-height: 400px; /* Adjust this value to your liking */
   overflow: auto; /* This will create a scrollbar when the content exceeds the max height */
   width: 100%; /* This will make the suggestion box as wide as the search bar */
   border-radius: 15px; /* This will make the suggestion box rounder */
