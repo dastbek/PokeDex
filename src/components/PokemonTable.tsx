@@ -43,6 +43,9 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
           <th className="sortable" onClick={() => sortData("Item")}>
             Item
           </th>
+          <th className="sortable" onClick={() => sortData("Repel")}>
+            Repel
+          </th>
           <th className="sortable" onClick={() => sortData("Region")}>
             Region
           </th>
@@ -62,7 +65,9 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
             <td>{row.Level}</td>
             <td>{row.Member}</td>
             <td>{row.Item}</td>
+            <td style={{ color: "#FF80FF" }}>{row.Repel}</td>{" "}
             <td>{row.Region}</td>
+            {/* Add this line */}
           </tr>
         ))}
       </tbody>
