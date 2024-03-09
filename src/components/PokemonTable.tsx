@@ -56,18 +56,30 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
           <tr key={index}>
             <td>{row.Map}</td>
             {searchType === "map" && <td>{row.Pokemon}</td>}
-            <td>{row.Type}</td>
+            <td
+              style={{
+                color:
+                  row.Type === "Headbutt"
+                    ? "Chartreuse"
+                    : row.Type === "Surf/Fish"
+                    ? "aqua"
+                    : row.Type === "Fish"
+                    ? "aqua"
+                    : "white",
+              }}
+            >
+              {row.Type}
+            </td>
             <td>{row.Time}</td>
             <td>{row.Tier}</td>
             <td>
-              <img src={row.Path} alt={row.Pokemon} /> {/* Add this line */}
+              <img src={row.Path} alt={row.Pokemon} />
             </td>
             <td>{row.Level}</td>
             <td>{row.Member}</td>
             <td>{row.Item}</td>
-            <td style={{ color: "#FF80FF" }}>{row.Repel}</td>{" "}
+            <td style={{ color: "#FF80FF" }}>{row.Repel}</td>
             <td>{row.Region}</td>
-            {/* Add this line */}
           </tr>
         ))}
       </tbody>
