@@ -6,9 +6,9 @@ import PokemonInfo from "./components/PokemonInfo";
 function App() {
   return (
     <div className="App">
-      <img src={"Wooper.png"} alt="Logo" className="logo" />
+      <img src={"char-pikachu.png"} alt="Logo" className="logo" />
       <PokemonInfo />
-      <div className="footer">Made by Duy</div>
+      <div className="footer">Made by Duy - Last updated 02/02/2025</div>
     </div>
   );
 }
