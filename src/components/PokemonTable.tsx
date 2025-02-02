@@ -49,6 +49,11 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
           <th className="sortable" onClick={() => sortData("Region")}>
             Region
           </th>
+          <th className="sortable" onClick={() => sortData("Tier Count")}
+            title="Number of Pokemon in the same rarity. Lower is better."
+          >
+            Tier Count (Hover)
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -80,6 +85,16 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
             <td>{row.Item}</td>
             <td style={{ color: "#FF80FF" }}>{row.Repel}</td>
             <td>{row.Region}</td>
+            <td
+              style={{
+                color:
+                  row["Tier Count"] === "1"
+                    ? "lime"
+                    : "white",
+              }}
+            >
+              {row["Tier Count"]}
+            </td>
           </tr>
         ))}
       </tbody>
