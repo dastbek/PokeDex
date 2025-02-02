@@ -18,7 +18,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
   onSuggestionsClearRequested,
 }) => {
   const inputProps = {
-    placeholder: "Search for a Pokemon",
+    placeholder: "Search for a Map or Pokemon",
     value,
     onChange: (
       event: React.FormEvent<any>,
