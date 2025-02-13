@@ -173,6 +173,6 @@ thead, tbody tr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 5%; /* or any size you want */
+  width: 7%; /* or any size you want */
   height: auto; /* maintain aspect ratio */
 }
