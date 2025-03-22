@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <img src={"dragonite-dragonite-mail.gif"} alt="Logo" className="logo" />
       <PokemonInfo />
-      <div className="footer">Made by Duy - Last updated {new Date().toLocaleDateString()}</div>
+      <div className="footer">Made by Duy - Last updated March 22nd 2025</div>
     </div>
   );
 }
